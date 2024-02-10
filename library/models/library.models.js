@@ -1,4 +1,4 @@
-import db from "../../db";
+import db from "../../db.js";
 
 // get a book from the db
 export const getItem = (id) => {

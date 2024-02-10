@@ -1,7 +1,7 @@
 import express from "express";
 import cors from "cors";
 
-import libraryRoutes from "./library/routes/library.routes";
+import libraryRoutes from "./library/routes/library.routes.js";
 
 const app = express();
 const port = 3000;
