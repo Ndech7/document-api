@@ -51,8 +51,8 @@ export const deleteItem = (id) => {
     if (index === -1) throw new Error("Book not Found");
     else {
       db.books.splice(index, 1);
+      return db.books;
     }
-    return book;
   } catch (error) {
     console.log("Error", error);
   }
