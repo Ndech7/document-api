@@ -1,12 +1,17 @@
 import express from "express";
 import cors from "cors";
 
+import libraryRoutes from "./library/routes/library.routes";
+
 const app = express();
 const port = 3000;
 
 // Global Middlewares
 app.use(cors());
 app.use(express.json());
+
+// Routes
+app.use("/library", libraryRoutes);
 
 // Server start
 if (process.env.NODE_ENV !== "test") {
