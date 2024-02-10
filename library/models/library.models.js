@@ -1,3 +1,5 @@
+import db from "../../db";
+
 // get a book from the db
 export const getItem = (id) => {
   try {
